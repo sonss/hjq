@@ -1,0 +1,27 @@
+{{- define "main" }}
+<div class="memos-header">
+<div class="intro">
+  <!--<h1>{{ .Title }}{{ if .Site.Params.addDot }}<span class="dot">.</span>{{ end }}</h1>-->
+</div>
+<div class="pagetitle">嘀咕一下，记录灵感瞬间，分享生活点滴。希望用嘀咕的形式，展现更完整的自己，吸引同频的朋友，所以，你是我要找的朋友吗？～～<span class="bb-load"></span></div>
+<div id="memos" class="img-hide"></div>
+</div>
+
+<div id="bber"></div>
+<script src="https://fastly.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script type="text/javascript">
+  var bbMemos = {
+    memos : 'https://memo.sonss.cn/',//修改为自己部署 Memos 的网址，末尾有 / 斜杠
+    limit : '',//默认每次显示 10条 
+    creatorId:'1' ,//默认为 101用户 https://demo.usememos.com/u/101
+    domId: '',//默认为 <div id="bber"></div>
+  }
+</script>
+<script src="/js/memos.js"></script>
+<!--发布 memos 内容-->
+<script src="/js/memos-editor.js"></script>
+<script src="/js/coco-message.min.js"></script>
+<!--评论加载-->
+<link href="https://npm.elemecdn.com/artalk@2.5.5/dist/ArtalkLite.css" rel="stylesheet">
+<script src="https://npm.elemecdn.com/artalk@2.5.5/dist/ArtalkLite.js"></script>
+{{- end }}

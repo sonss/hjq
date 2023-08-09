@@ -1,0 +1,539 @@
+//首页调用
+.momos-sswrap {
+  margin-top: 20px;
+  display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+	grid-gap: 10px; /* 中间空10px间距 */
+}
+.memos_diaoyong,.bb-list-li,.memos-random-background{
+  border-radius:4px;
+  background: var(--bankuai-color) !important;
+  padding:20px; 
+  transition: all .3s cubic-bezier(0,0,.5,1);
+}
+.memos_diaoyong:hover,.bb-list-li:hover{
+  box-shadow: 2px 4px 16px rgba(0,0,0,.05);
+}
+.memos-zuoz{
+  display: flex;
+  margin-bottom: 10px;
+}
+.memos_diaoyong_from a{
+  color: #666;
+  font-family: var(--font-family-code);
+}
+.memos-logo,.memos-logo2{
+ padding-top: 7px;
+}
+.memos-logo img,.memos-logo2 img{
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.talks_comments{
+  margin-left: auto;
+  padding-top: 7px;
+}
+.talks_comments a{
+  display: flex;
+  text-decoration: none;
+}
+.comment-s{
+  margin-left: 4px;
+  color: #999;
+  font-size: 14px;
+}
+.talks_comments svg {
+  width: 16px;
+  fill: #c0c0c0;
+}
+.talks_comments a{
+  cursor:pointer;
+}
+.memos_diaoyong:hover .talks_comments svg ,.bb-list-li:hover .talks_comments svg{
+  fill: #666;
+}
+.memos_diaoyong_top{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.memos_diaoyong_from,.memos_diaoyong_time,.memos_diaoyong_laiz a{
+  color: #999;
+  font-size: 14px;
+  font-family: var(--font-family-code);
+  margin-right: 6px;
+}
+.memos_diaoyong_info p{
+  font-size: 16px;
+  color: var(--text-content-color);
+  line-height:1.6;
+  margin: 0;
+}
+
+//嘀咕页
+#bber,.memos-header,.bb-load{
+  max-width: 800px;
+  margin: auto;
+}
+.bb-list-ul{
+  display: grid;
+  gap: 15px;
+  margin-top: 15px;
+}
+.datacont p{
+  font-size:18px;
+  line-height:1.8;
+  margin:0;
+}
+.datacont a{
+  color: var(--text-highlight-color);
+}
+.resimg figure{
+  margin:0;
+  margin-bottom: -4px;
+}
+.resimg{
+  display: grid;
+  gap: 6px;
+  width: 60%;
+  grid-template-columns: repeat(2, 1fr); 
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+.gallery-thumbnail img{
+  width: 100% !important;
+  height: 170px !important;
+  object-fit: cover;
+  border-radius:4px;
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+  margin: 0 !important;
+}
+.resimg img:hover{
+  transform: scale(1.03);
+}
+.grid-3,.grid-5,.grid-6,.grid-7,.grid-8,.grid-9{
+  grid-template-columns: repeat(3, 1fr); 
+}
+.grid-3 img,.grid-5 img,.grid-6 img,.grid-7 img,.grid-8 img,.grid-9 img{
+  height: 140px !important;
+}
+.tag-span,.memos-index-tag {
+  color: #999;
+  background: #F4F4F4;
+  font-size: 14px;
+  border-radius:4px;
+  vertical-align: middle;
+}
+.memos-index-tag{
+  padding: 6px;
+}
+.tag-span{
+  display: inline-block; /* 根据padding宽度自动调整 */
+  padding: 6px;
+  margin-right: 8px;
+}
+.memos-pl{
+  display: flex;
+  margin-bottom: 15px;
+}
+.bb-load button{
+  border: none;
+  background: #fff;
+  cursor: pointer;
+  color: var(--text-highlight-color);
+  border-radius:4px;
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-family: var(--font-family-title);
+  font-size: 16px;
+}
+.bb-load button:hover{
+  opacity: 0.8;
+  transition: opacity .3s ease-in-out;
+}
+pre{
+  border-radius: 4px;
+  line-height: 1.8;
+  background: var(--background-color);
+  padding: 20px;
+  white-space: pre-wrap; 
+}
+pre code{
+  background: transparent;
+  font-size: 14px;
+  padding: 0;
+  color: #666;
+  border: none;
+  margin: 0;
+}
+code{
+  background: #ffe9ef;
+  border: 1px solid #ffd4de;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 2px 6px 2px 6px;
+  font-family: var(--font-family-code);
+  margin: 0 4px 0 4px;
+}
+.memos_diaoyong code{
+  font-size: 14px;
+  padding: 3px 6px 2px 6px;
+}
+blockquote p{
+  background: var(--background-color);
+  border-radius: 0 4px 4px 0;
+  padding: 10px;
+  font-size: 16px !important;
+  line-height: 1.6 !important;
+  border-left: 4px solid #bfbfbf;
+  color: #666 !important;
+  margin: -10px -40px 0 -40px !important;
+}
+
+//memos页发布嘀咕
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+.load-memos-editor{
+  color: var(--text-content-color);
+  cursor: pointer;
+  font-size: 40px;
+  font-family: var(--font-family-title);
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.d-flex {
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+.d-none {
+  display: none !important;
+}
+.memos-editor-body{
+  border-radius:4px;
+  background: var(--bankuai-color);
+  transition: all .3s cubic-bezier(0,0,.5,1);
+  padding: 20px;
+  box-shadow: 2px 4px 16px rgba(0,0,0,.05);
+}
+.memos-editor-content .memos-editor-textarea{
+  border: transparent;
+  border-radius:4px;
+  line-height:1.6;
+  min-height: 80px;
+  overflow-x:hidden;
+  overflow-y:clip;
+  width:100%;
+  outline:0.5px solid transparent;
+  resize:none;
+  background: transparent;
+  font-family: var(--font-family-paragraph);
+  font-size: 16px;
+}
+.memos-editor-tools{
+  margin-top:4px;
+  margin-bottom: 15px;
+}
+.memos-editor-tools .action-btn{
+  margin-right: 20px;
+  cursor: pointer;
+}
+.p-2{
+  margin-left: 15px;
+}
+.memos-editor-tools .memos-tag-list{
+  display:flex;
+  flex-wrap: wrap;//宽度显示不下自动换行
+  margin-top: 15px;
+  grid-gap: 15px;
+
+}
+.memos-editor-tools .memos-tag{
+  cursor: pointer;
+}
+.memos-editor-tools .memos-tag a{
+  color: #999;
+}
+.editor-selector {
+  position: relative;
+  display: inline-block;
+}
+.editor-selector select {
+  appearance: none; /* 隐藏原生控件样式 */
+  border: 0.5px solid #dadada;
+  border-radius: 4px;
+  padding: 8px 20px 8px 6px;
+  background: transparent;
+  color: #666;
+  font-family: var(--font-family-paragraph);
+  font-size: 14px;
+  outline:0.5px solid transparent;
+}
+.editor-selector::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 8px; /* 调整箭头的位置，这里示例将箭头靠右偏移8像素 */
+  width: 0;
+  border-style: solid;
+  border-width: 4px 4px 0 4px; /* 控制箭头的大小和形状 */
+  border-color: #999 transparent transparent transparent; /* 控制箭头的颜色 */
+  transform: translateY(-50%); /* 将箭头垂直居中对齐 */
+}
+.submit-memos-btn,.edit-memos-btn{
+  background: transparent;
+  border: 0.5px solid #dadada;
+  cursor: pointer;
+  color: var(--text-highlight-color);
+  border-radius:4px;
+  padding: 6px 15px 6px 15px;
+}
+.cancel-edit-btn{
+  padding: 6px 15px 6px 15px;
+  cursor: pointer;
+  border: 0.5px solid #FFF;
+  margin-right: 8px;
+  color: #999;
+}
+.submit-memos-btn:hover,.memos-open-api-submit:hover,.edit-memos-btn:hover,.cancel-edit-btn:hover{
+  opacity: 0.8;
+  transition: opacity .3s ease-in-out;
+}
+.memos-editor-footer{
+  display:flex;
+  align-items:center;
+}
+.justify-content-end {
+  margin-left: auto;
+}
+.memos-image-list{
+  cursor: pointer;
+  gap: 15px;
+  color: #999;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+.memos-img-edit{
+  background: #f5f5f5;
+  padding: 6px;
+  border-radius:4px;
+}
+.memos-img-edit:hover{
+  text-decoration: line-through;
+}
+
+//填写api样式
+.memos-editor-option{
+  display: flex; 
+}
+.memos-open-api-input{
+  border: transparent;
+  padding:6px 0 6px 0;
+  width:100%;
+  outline:0.5px solid transparent;
+  margin-right: 10px;
+  background: transparent;
+  font-size: 16px;
+  font-family: var(--font-family-code);
+}
+.memos-open-api-submit{
+  background: var(--text-highlight-color);
+  cursor: pointer;
+  color: #fff;
+  border-radius:4px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+//随机memos
+.memos-random-background{
+  margin-top: 15px;
+}
+.memos-random{
+  list-style-type: none;
+}
+//嘀咕编辑
+.memos-edit{
+  margin-left: auto;
+  position: relative;
+  display: inline-block;
+}
+.memos-menu{
+  margin-left: 50px;
+  color: #FFF;
+}
+.memos-menu-d {
+  width: 60px;
+  position: absolute;
+  top: -60px;
+  right: -10px;
+  background-color: #fff;
+  padding: 8px 0 8px 0;
+  box-shadow: 2px 4px 16px rgba(0,0,0,.15);
+  text-align: center;
+  border-radius:4px;
+  display: none;
+}
+.memos-edit:hover .memos-menu-d {
+  display: block; 
+}
+.edit-btn,.archive-btn,.delete-btn {
+  cursor: pointer;
+  line-height: 1.8;
+  color: #999;
+  font-size: 14px;
+}
+.edit-btn:hover,.archive-btn:hover,.delete-btn:hover {
+  text-decoration: underline;
+}
+.delete-btn{
+  color: #c70000 !important;
+}
+.edit-memos{
+  display: flex;
+}
+
+// 页面宽度小于700样式
+@media (max-width:700px){
+  .resimg{
+    width: 100% !important;
+  }
+  .gallery-thumbnail img{
+    height: 140px !important;
+  }
+  .grid-3 img,.grid-5 img,.grid-6 img,.grid-7 img,.grid-8 img,.grid-9 img{
+    height: 100px !important;
+  }
+  .resimg figure{
+    margin-bottom: -8px;
+  }
+}
+// 页面宽度大于700样式
+//首页图片样式
+@media (min-width:700px){
+  .memos_diaoyong .resimg{
+    width: 100% !important;
+    grid-template-columns: repeat(4, 1fr); 
+  }
+  .memos_diaoyong .gallery-thumbnail img{
+    height: 90px !important;
+  }
+  .memos_diaoyong .grid-3,.memos_diaoyong .grid-5,.memos_diaoyong .grid-6,.memos_diaoyong .grid-7,.memos_diaoyong grid-8,.memos_diaoyong .grid-9{
+    grid-template-columns: repeat(4, 1fr); 
+  }
+  .memos_diaoyong .grid-3 img,.memos_diaoyong .grid-5 img,.memos_diaoyong .grid-6 img,.memos_diaoyong .grid-7 img,.memos_diaoyong .grid-8 img,.memos_diaoyong .grid-9 img{
+    height: 80px !important;
+  }
+  .memos_diaoyong .resimg figure{
+    margin-bottom: -8px;
+  }
+  }
+// 夜间模式页面样式
+@media (prefers-color-scheme: dark) {
+.bb-timeline ul li {
+  background: var(--background-dark-color) !important;
+}
+.tag-span,.memos-index-tag{
+  background: #332E2F;
+}
+.bb-load button{
+  background:var(--background-dark-color);
+}
+.memos_diaoyong,.bb-list-li,.memos-random-background{
+  background: var(--background-dark-color) !important;
+}
+.memos_diaoyong_from a{
+  color: #999;
+}
+.memos_diaoyong_time, .memos_diaoyong_laiz a,.memos_diaoyong_from{
+  color: #666;
+}
+.memos_diaoyong_info p, .memos_diaoyong_info a {
+  color: var(--text-content-dark-color) !important;
+}
+.talks_comments svg {
+  fill: #666;
+}
+.memos_diaoyong:hover .talks_comments svg,.bb-list-li:hover .talks_comments svg{
+  fill: #c0c0c0;
+}
+pre,blockquote p{
+  background: #2c2829;
+}
+pre code{
+  color: #999;
+}
+code{
+  background: #2c2829;
+  border: 1px solid #2c2829;
+  color: var(--text-highlight-color);
+}
+blockquote p{
+  border-left: 4px solid #5f5f5f;
+  color: #888 !important;
+}
+.memos_diaoyong_info blockquote p{
+  color: #888 !important;
+}
+//memos页发布嘀咕
+.load-memos-editor,.memos-open-api-input{
+  color: var(--text-content-dark-color) !important;
+}
+.memos-editor-body{
+  background: var(--background-dark-color) !important;
+}
+.editor-selector select {
+  border: 0.5px solid #454545 !important;
+  color: #999 !important;
+}
+.memos-editor-content .memos-editor-textarea{
+  color: var(--text-content-dark-color);
+}
+.submit-memos-btn,.edit-memos-btn{
+  border: solid #454545 0.5px !important;
+}
+.memos-open-api-submit{
+  background: #1A1718 !important;
+  color: var(--text-highlight-color) !important;
+}
+.edit-btn,.archive-btn,.delete-btn,.cancel-edit-btn,.memos-image-list{
+  color: #666;
+}
+.memos-menu{
+  color: #201d1e;
+}
+.memos-menu-d,.memos-img-edit{
+  background-color: #282527;
+}
+.cancel-edit-btn{
+  border: 0.5px solid #201d1e;
+}
+//表情
+.emoji-item:hover{
+  background: #3a3a3a !important;
+}
+}
+
+//表情
+.emoji-selector{
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 6px;
+  margin-bottom: 15px;
+}
+.emoji-item {
+  padding: 4px;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+}
+.emoji-item:hover{
+  background: #ebebeb;
+  border-radius:4px;
+}

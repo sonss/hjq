@@ -1,0 +1,114 @@
+{
+    "good": [
+        {
+            "image": "https://cdn.tuiqiao.cc/images/goods/chunlu.webp",
+            "title": "精雀·大马士革玫瑰纯露",
+            "jiage": "￥39.9",
+            "note": "筛选优质大马士革玫瑰，给肌肤补满状态。0香精、0防腐剂",
+            "details":"购买咨询",
+            "link": "https://work.weixin.qq.com/kfid/kfc130bd913cf7328b2",
+            "tiyi": "产品详情",
+            "link_2":"/chunlu.html"
+        },
+        {
+            "image": "https://cdn.tuiqiao.cc/images/goods/yaotiao.webp",
+            "title": "精雀·窈窕多维精油",
+            "jiage": "¥ 198",
+            "note": "肥胖让每个灵魂变得脆弱，窈窕精油科学控制代谢，健康甩掉多余脂肪",
+            "details":"购买咨询",
+            "link": "https://work.weixin.qq.com/kfid/kfc130bd913cf7328b2",
+            "tiyi": "产品详情",
+            "link_2":"/yaotiao.html"
+        },
+        {
+            "image": "https://cdn.tuiqiao.cc/images/goods/biyan.webp",
+            "title": "精雀·BY鼻炎精油",
+            "jiage": "¥ 98",
+            "note": "对抗疲劳和沮丧，感受每一次呼吸的自由。",
+            "details":"购买咨询",
+            "link": "https://work.weixin.qq.com/kfid/kfc130bd913cf7328b2",
+            "tiyi": "产品详情",
+            "link_2":"/biyan.html"
+        },
+        {
+            "image": "https://cdn.tuiqiao.cc/images/goods/hufa.webp",
+            "title": "精雀·HF护发精油",
+            "jiage": "¥ 98",
+            "note": "植物萃取精华，触感柔滑，滴滴莹润，告别毛躁发质。",
+            "details":"购买咨询",
+            "link": "https://work.weixin.qq.com/kfid/kfc130bd913cf7328b2",
+            "tiyi": "产品详情",
+            "link_2":"/hufa.html"
+        },
+        {
+            "image": "https://cdn.tuiqiao.cc/images/goods/qudou.webp",
+            "title": "精雀·QD祛痘精油",
+            "jiage": "¥ 98",
+            "note": "点涂于痘痘处，避免大面积使用。",
+            "details":"购买咨询",
+            "link": "https://work.weixin.qq.com/kfid/kfc130bd913cf7328b2",
+            "tiyi": "产品详情",
+            "link_2":"/qudou.html"
+        },
+        {
+            "image": "https://cdn.tuiqiao.cc/images/goods/yanyan.webp",
+            "title": "精雀·YY咽炎精油",
+            "jiage": "¥ 98",
+            "note": "吸嗅，让芳香因子进入大脑，调节情绪，通过鼻腔可入血",
+            "details":"购买咨询",
+            "link": "https://work.weixin.qq.com/kfid/kfc130bd913cf7328b2",
+            "tiyi": "产品详情",
+            "link_2":"/yanyan.html"
+        },
+        {
+            "image": "https://cdn.tuiqiao.cc/images/goods/zhichuang.webp",
+            "title": "精雀·ZC痔疮精油",
+            "jiage": "¥ 98",
+            "note": "每天涂于清洁后患处3-4次",
+            "details":"购买咨询",
+            "link": "https://work.weixin.qq.com/kfid/kfc130bd913cf7328b2",
+            "tiyi": "产品详情",
+            "link_2":"/zhichuang.html"
+        },
+        {
+            "image": "https://cdn.tuiqiao.cc/images/goods/zhumian.webp",
+            "title": "精雀·ZM助眠精油",
+            "jiage": "¥ 98",
+            "note": "坚持使用，逐渐调节睡眠问题，保持身心健康",
+            "details":"购买咨询",
+            "link": "https://work.weixin.qq.com/kfid/kfc130bd913cf7328b2",
+            "tiyi": "产品详情",
+            "link_2":"/zhumian.html"
+        },
+        {
+            "image": "https://cdn.tuiqiao.cc/images/goods/chentan.webp",
+            "title": "精雀·沉檀多维精油",
+            "jiage": "¥ 198",
+            "note": "精油能渗透进入血液，跟着经络跑动起来，打通体内淤堵。",
+            "details":"购买咨询",
+            "link": "https://work.weixin.qq.com/kfid/kfc130bd913cf7328b2",
+            "tiyi": "产品详情",
+            "link_2":"/chentan.html"
+        },
+        {
+            "image": "https://cdn.tuiqiao.cc/images/goods/lanzhu.webp",
+            "title": "精雀·兰竺护肤精油",
+            "jiage": "¥ 198",
+            "note": "可直接全身涂抹，很干的关节处，可早晚多次涂抹",
+            "details":"购买咨询",
+            "link": "https://work.weixin.qq.com/kfid/kfc130bd913cf7328b2",
+            "tiyi": "产品详情",
+            "link_2":"/lanzhu.html"
+        },
+        {
+            "image": "https://cdn.tuiqiao.cc/images/goods/lianyi.webp",
+            "title": "精雀·连夷多维精油",
+            "jiage": "¥ 198",
+            "note": "调节心神，平息止燥，解郁去热",
+            "details":"购买咨询",
+            "link": "https://work.weixin.qq.com/kfid/kfc130bd913cf7328b2",
+            "tiyi": "产品详情",
+            "link_2":"/lianyi.html"
+        }
+    ]
+}
